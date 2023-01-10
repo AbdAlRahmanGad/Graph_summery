@@ -1,4 +1,4 @@
-/// adjacency matrix for undirected graph
+      adjacency matrix for undirected graph
 
 using namespace std;
 
@@ -17,13 +17,16 @@ int main()
         adj[v][u] = 1;// this statement will be removed in case of directed graph
         
      ///   if weihgted 
- //       adj[u][v] = wieght;
- //       adj[v][u] = wieght ;
+        
+        adj[u][v] = wieght;
+        adj[v][u] = wieght ;
     }
     return 0;
 }
 
-    /// adjacency list for undirected graph
+
+
+      adjacency list for undirected graph
 
 int main()
 {
@@ -31,9 +34,11 @@ int main()
     cin >> n >> m;
     // adjacency list for undirected graph
     // time complexity: O(2E)
-    vector<int> adj[n+1];
-    ///if wieghted 
-        vector<pair<int,int >> adj[n+1];
+      vector<int> adj[n+1];
+  
+          ///if wieghted 
+     
+          vector<pair<int,int >> adj[n+1];
 
     for(int i = 0; i < m; i++)
     {
@@ -41,13 +46,17 @@ int main()
         cin >> u >> v;
         adj[u].push_back(v);
         adj[v].push_back(u);
-           ///if wieghted 
-             adj[u].push_back({v,wieght});
+         
+        ///if wieghted 
+        
+        adj[u].push_back({v,wieght});
         adj[v].push_back({u,wieght});
     }
     return 0;
 }
-    /// adjacency list for directed graph
+
+
+    adjacency list for directed graph
 
 int main()
 {
