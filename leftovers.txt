@@ -1,0 +1,16 @@
+bfs 
+practice problems
+
+5
+8
+9
+10
+11
+13
+14
+15
+16
+17
+
+
+now 19
